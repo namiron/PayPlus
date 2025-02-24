@@ -1,0 +1,1 @@
+export const LOGO_TEXT: string = "v1.0.15";
