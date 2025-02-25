@@ -1,6 +1,7 @@
 import React from "react";
 import { useAppSelector } from "../../entities/hooks/store.hooks";
 import List from "../../shared/ui/list/list";
+import styles from './styles/products.module.scss'
 
 interface IMainProps {}
 
@@ -10,11 +11,8 @@ const ProductsLayout: React.FC<IMainProps> = () => {
   //-----------------------------
 
   return (
-    <div className="Products">
-      <div className="search"></div>
-      <div className="productsList">
-        <List products={productList} />
-      </div>
+    <div className={styles.layoutProduct}>
+      <List products={productList} />
     </div>
   );
 };

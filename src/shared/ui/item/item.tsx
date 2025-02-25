@@ -9,16 +9,20 @@ interface IItemProps {
 
 const Item: React.FC<IItemProps> = ({ product }) => {
   return (
-    <li className="item">
-      <div className="container">
-        <Image
-          image={product.image_url}
-          alt={product.name}
-          layoutStyles={styles.layoutStyles}
-        />
+    <li className={styles.item}>
+      <div className={styles.container}>
+        <div className={styles.image}>
+          <Image
+            image={product.image_url}
+            alt={product.name}
+            layoutStyles={styles.layoutStyles}
+          />
+        </div>
         <div className={styles.holder}>
-          <p className="name">{product.name}</p>
-          <p className="price">{product.price}</p>
+          <div className={styles.inner}>
+            <p className={styles.name}>{product.name}</p>
+            <p className={styles.price}>₪ {product.price}</p>
+          </div>
         </div>
       </div>
     </li>

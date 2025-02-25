@@ -1,0 +1,27 @@
+.pagination {
+  padding-top: calc(10px + (20 - 10) * ((100vw - 320px) / (1240 - 320)));
+  padding-bottom: calc(10px + (20 - 10) * ((100vw - 320px) / (1240 - 320)));
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: calc(5px + (10 - 5) * ((100vw - 320px) / (1240 - 320)));
+}
+
+//-----------------------------Button Pagination Global Style
+.paginationButtonStyles {
+  border: 1px solid #34aa54;
+  background: #fff;
+  color: #34aa54;
+  max-width: 20px;
+  padding: 3px;
+   transition: all 0.3s ease 0s;
+  &:hover{
+    transition: background 0.03s ease 0s;
+    background: #34aa54;
+    color:#fff;
+  }
+}
+//-----------------------------Button Pagination Global Style
