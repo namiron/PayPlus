@@ -21,5 +21,4 @@ const Search: React.FC<ISearchProps> = ({ search, onSearchChange }) => {
     </div>
   );
 };
-
 export default Search;
