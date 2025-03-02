@@ -7,7 +7,7 @@ import Pagination from "../../../features/pagination/Pagination";
 import { useAppDispatch } from "../../../entities/hooks/store.hooks";
 import { filterProductListFotInput } from "../../../store/controllers/product-slice";
 import Nav from "../../../features/navigation/Nav";
-import Search from "../../../features/search/Search";
+import Search from "../../../features/search/search";
 
 interface IListProps {
   products: IProductsTypes[];
