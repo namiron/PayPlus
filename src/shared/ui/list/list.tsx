@@ -4,11 +4,10 @@ import styles from "./styles/list.module.scss";
 import Item from "../item/item";
 import { countItemsOnPage } from "../../../entities/constants/data/pagination.constants";
 import Pagination from "../../../features/pagination/Pagination";
-
 import { useAppDispatch } from "../../../entities/hooks/store.hooks";
 import { filterProductListFotInput } from "../../../store/controllers/product-slice";
 import Nav from "../../../features/navigation/Nav";
-import Search from "../../../features/search/Search";
+import Search from "../../../features/search/Search.tsx";
 
 interface IListProps {
   products: IProductsTypes[];
