@@ -9,7 +9,6 @@ import { filterProductListFotInput } from "../../../store/controllers/product-sl
 import Nav from "../../../features/navigation/Nav";
 import Search from "../../../features/search/Search";
 
-
 interface IListProps {
   products: IProductsTypes[];
 }
